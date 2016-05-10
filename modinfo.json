@@ -1,0 +1,26 @@
+{
+  "author": "wondible",
+  "build": "94243-pte",
+  "category": ["titans"],
+  "context": "client",
+  "date": "2016/05/09",
+  "description": "Test number of usable strategic icons.",
+  "display_name": "Icon Test",
+  "forum": null,
+  "identifier": "com.wondible.pa.icon_test",
+  "priority": 100,
+  "scenes": {
+    "icon_atlas": [
+      "coui://ui/mods/icon_test/icon_atlas.js"
+    ],
+    "start": [
+      "coui://ui/mods/icon_test/start.js"
+    ],
+    "settings": [
+      "coui://ui/mods/icon_test/settings.js"
+    ]
+  },
+  "signature": "not yet implemented",
+  "version": "0.1.0"
+}
+
