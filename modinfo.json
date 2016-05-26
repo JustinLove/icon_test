@@ -1,9 +1,9 @@
 {
   "author": "wondible",
-  "build": "94243-pte",
+  "build": "94533-pte",
   "category": ["titans"],
   "context": "client",
-  "date": "2016/05/09",
+  "date": "2016/05/26",
   "description": "Test number of usable strategic icons.",
   "display_name": "Icon Test",
   "forum": null,
@@ -21,6 +21,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "0.1.0"
+  "version": "0.2.0"
 }
 
