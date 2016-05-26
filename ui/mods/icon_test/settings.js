@@ -27,6 +27,13 @@
     })
   })
 
+  var canvas = document.createElement('canvas')
+  var gl = canvas.getContext("webgl");
+  gl.viewportWidth = canvas.width;
+  gl.viewportHeight = canvas.height;
+  var max_texture_size = gl.getParameter(gl.MAX_TEXTURE_SIZE)
+  var max_renderbuffer_size = gl.getParameter(gl.MAX_RENDERBUFFER_SIZE)
+  gl = canvas = undefined
 
   var settingsHtml = 
     '<div class="form-group">' +
@@ -38,6 +45,18 @@
         '<div class="option">' +
           '<label>Delay Seconds</label>' +
           '<input type="text" class="form-control" value="" data-bind="value: iconTestDelay" />' +
+        '</div>' + 
+        '<div class="option">' +
+          '<label>MAX_TEXTURE_SIZE</label>' +
+          '<p>' + max_texture_size + '</p>' +
+        '</div>' + 
+        '<div class="option">' +
+          '<label>MAX_RENDERBUFFER_SIZE</label>' +
+          '<p>' + max_renderbuffer_size + '</p>' +
+        '</div>' + 
+        '<div class="option">' +
+          '<label>Online WebGL Test</label>' +
+          '<p><a href="https://www.browserleaks.com/webgl">https://www.browserleaks.com/webgl</p>' +
         '</div>' + 
       '</div>' + 
     '</div>'
